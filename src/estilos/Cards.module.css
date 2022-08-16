@@ -1,0 +1,40 @@
+.sinCiudades {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  opacity: 0;
+  animation: fadeinout 15s linear infinite;
+  animation-iteration-count: 3;
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  8% { opacity: .8; }
+  10% { opacity: .8; }
+  18% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.cards {
+  min-height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  background-color: rgba(110, 110, 200, 0.71);
+  background-image: url(../assets/fondo.jpg); 
+  background-repeat: repeat;
+  background-blend-mode: darken;
+  background-size: 80%;
+  animation: nubes 30s ease-in-out infinite alternate;
+}
+
+@keyframes nubes{
+  0%{
+    background-position: center left;
+  }
+  100%{
+    background-position: center right;
+  }
+}

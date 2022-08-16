@@ -1,0 +1,26 @@
+.input_search {
+  background-color: rgb(246, 251, 171);
+  border-radius: 0.4rem;
+  color: rgb(100, 107, 33);
+  width: 9rem;
+  height: 1.4rem;
+  font-size: 0.8rem;
+}
+
+.input_search:hover {
+  border: 2px solid rgb(29, 124, 50);
+}
+
+.boton_search {
+  color: rgb(246, 251, 171);
+  background-color: rgb(100, 107, 33);
+  border-radius: 0.4rem;
+  font-weight: bold;
+  padding: 0.4rem;
+}
+
+.boton_search:hover {
+  color: rgb(246, 251, 171);
+  background-color: rgb(100, 107, 33);
+  border: 2px solid rgb(246, 251, 171);
+}

@@ -1,0 +1,39 @@
+$green: #7ceaa4;
+
+.wrap {
+  width: 100%;
+}
+
+.svg {
+  stroke: $green;
+  position: absolute;
+  bottom: -190vh;
+  transform-style: preserve-3d;
+}
+
+$total: 20; // cantidad de iconos, debe coincidir con la cantidad renderizada en el modulo
+
+@for $i from 1 through $total+1 {
+
+  $scale: 15; // escala general (es inversa, numero chico sale gigante, numero grande sale chiquito)
+  $random: .15 + random(15) / 100; // random para que los iconos tengan distintas escalas
+
+  $escalaentrada: (.1 * ($scale / 15) - $random);
+  $escalasalida: (.1 * ($scale / 30) - $random);
+
+  .svg:nth-child(#{$i}) {
+    left: ((100 * ($i / $total)) - 55) * 1%;
+    animation: raise#{$i} 20+random(20)+s linear infinite;
+    animation-delay: random(10) + s;
+    transform: scale($escalaentrada) rotate(random(360) + deg);
+    z-index: -20;
+    filter: blur($i - 10 + px);
+
+    @keyframes raise#{$i} {
+      to {
+        bottom: 60vh;
+        transform: scale($escalasalida) rotate(random(360) + deg);
+      }
+    }
+  }
+}

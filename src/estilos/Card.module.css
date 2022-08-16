@@ -1,0 +1,104 @@
+.card {
+  width: 220px;
+  height: 250px;
+  border: 3px solid black;
+  border-radius: 50px;
+  padding: 12px;
+  margin: 20px;
+  box-shadow:
+    0 0 0 4px hsl(0, 0%, 70%),
+    0 0 0 7px hsl(0, 0%, 90%);
+}
+
+.titulo_contenedor {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.titulo {
+  color: rgb(255, 255, 255);
+  font-size: 1.9em;
+  font-weight: bold;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.contenedor_datos {
+  width: 100%;
+  display: flex;
+  color: white;
+}
+
+.contenedor_temperatura {
+  font-size: 1.15em;
+  align-items: center;
+}
+
+.contenedor_temperatura_actual {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.temperatura_actual {
+  font-size: 3em;
+  line-height: 100%;
+}
+
+.temperatura_grados {
+  font-size: 2.5em;
+  line-height: 100%;
+  height: 24px;
+}
+
+.temperatura_decimales {
+  font-size: 1.4em;
+  line-height: 100%;
+}
+
+.boton_cerrar {
+  position: static;
+  left: 180px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(200, 47, 0);
+  border-color: black;
+  font-weight: bold;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.boton_cerrar:hover {
+  animation-name: iconoCerrar;
+}
+
+.contenedor_icono_clima {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.icono_clima {
+  font-size: 2.8em;
+  color: white;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  transition: all 0.3s ease-in-out;
+  animation-name: createBox;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes createBox {
+  from {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}

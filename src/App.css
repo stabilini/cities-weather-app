@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+.footer {
+  color: lightgray;
+  opacity: 0.6;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  width: 100%;
+  position:absolute;
+  bottom: 2%;
+  justify-content: center;
+}
