@@ -35,7 +35,7 @@ function SearchBar(props) {
       />
       &nbsp;
       <button className={estilos.boton_search} onClick={manejarEnvio}>
-        Agregar ciudad
+        Buscar ciudad
       </button>
     </div>
   );
