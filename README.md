@@ -1,31 +1,29 @@
-# App del Clima
+Developed as a learning project during SoyHenry bootcamp.
 
-Este proyecto necesita SCSS para correr el fondo animado con iconos.
+## Weather cities app
 
-Para instalarlo, correr:
+This project needs SCSS for animated background.
+
+Install SCSS:
 
 ### `npm i sass --save-dev`
 
 
-# Bugs / Cosas a mejorar
+# Bugs / Things to improve
 
-1) Cambiar el alert cuando no se encuentra una ciudad (es horrible).
+1) Change alert when not city not found for something else.
 
-2) Comportamiento raro en moviles:
-Desplazamiento horizontal y verticla raro
-Zoom automatico cuando se hace focus en el input (sacarlo?)
+2) Check mobile behaviour:
+Horzontal and vertical displacement.
+Zoom when input focus.
 
-~~3) Sacar Bootstrap~~
+3) Change between metric and imperial units.
 
-~~4) Que se puedan ingresar ciudades apretando ENTER en vez del boton~~
+4) Time interval for updating data
 
-5) Agregar para cambiar entre grados centigrados y farenheit
+5) Add info on CARDs (humidity, presure, etc)
 
-6) Agregar para configurar que actualice el clime cada x tiempo (horas)
-
-7) Agregar mas info en cada CARD (humedad, presion... pueden ir a cada lado del icono)
-
-8) Revisar size de fonts, ahora que no tiene bootstrap cambio todo :(
+6) Check font sizes
 
 
 
