@@ -25,6 +25,8 @@ Zoom when input focus.
 
 6) Check font sizes
 
+7) Add "loading" icon or text after input
+
 
 
 # Getting Started with Create React App
