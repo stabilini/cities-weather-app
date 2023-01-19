@@ -3,20 +3,19 @@ import Nav from "./components/Nav";
 import Cards from "./components/Cards";
 import FondoAnimado from "./components/FondoAnimado";
 import "./App.css";
-// import apiKey from "./tokens";
-import cities from "./assets/data.js";
+const API_KEY = process.env.API_KEY
+// import cities from "./assets/data.js";
 
 function App() {
   var [ciudades, setCiudades] = useState([]);
 
   // La siguiente linea es solo para hacer las pruebas y no llamar a la API, despues comentarla y dejar activa la funcion de abajo
   // ciudades = [...cities];
-  let apiKey = '3d2faacaeadc49552dd87412f55dbef1';
-
+  
   function onSearch(ciudad) {
     console.log(null);
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY}&units=metric`
     )
       .then((r) => r.json())
       .then((recurso) => {
