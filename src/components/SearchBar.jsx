@@ -30,7 +30,7 @@ function SearchBar(props) {
         className={estilos.input_search}
         onChange={manejarCambio}
         value={input}
-        autofocus
+        autoFocus
         onKeyUp={usarEnter}
       />
       &nbsp;

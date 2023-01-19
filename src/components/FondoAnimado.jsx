@@ -33,6 +33,7 @@ export default function FondoAnimado() {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="-400 -800 4000 4000"
             preserveAspectRatio="none"
+            key={ i }
           >
             <path d={iconos[i]} strokeWidth="20" fill="none" />
           </svg>
